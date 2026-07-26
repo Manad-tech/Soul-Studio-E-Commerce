@@ -12,7 +12,7 @@ export const heroStats = [
 export const heroContent = {
   badge: "ORIGINAL ART — HANDCRAFTED",
 
-  title: "Where Art Meets Its Soul",
+  title: "Where Art Meets Soul",
 
   description:
     "Paintings, sculptures, ceramics, prints, and resin art — each piece born from two decades of exploration across material and form.",

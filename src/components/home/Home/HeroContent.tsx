@@ -25,7 +25,7 @@ export default function HeroContent() {
       <h1 className="max-w-4xl font-serif text-6xl font-medium leading-[1.02] tracking-[-0.04em] text-white md:text-8xl">
         Where Art
         <br />
-        Meets Its Soul
+        Meets Soul
       </h1>
 
       {/* Description */}

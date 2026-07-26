@@ -81,7 +81,7 @@ export default function HomePage() {
             </p>
             <h1 className="font-serif text-5xl sm:text-7xl md:text-8xl leading-[1.05] text-white font-normal tracking-tight">
               Where Art <br />
-              Meets Its Soul
+              Meets Soul
             </h1>
             <p className="max-w-2xl mx-auto text-white/70 text-base sm:text-lg md:text-xl leading-relaxed">
               Paintings, sculptures, ceramics, prints, and resin art — each piece born from two decades of exploration across material and form.

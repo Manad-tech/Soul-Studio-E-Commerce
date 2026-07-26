@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Soul Studio",
 
-  tagline: "Timeless Art. Handmade Stories.",
+  tagline: "Where Art Meets Soul",
 
   description:
     "Discover original paintings, sculptures, ceramics, resin art and limited edition prints.",
