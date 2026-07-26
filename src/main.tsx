@@ -8,12 +8,14 @@ import "@fontsource/dm-sans";
 import "./index.css";
 
 import { router } from "@/routes";
-import { QueryProvider } from "@/providers/query-provider";
+import AppProviders from "./providers/AppProviders";
+import { Toaster } from "sonner";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <QueryProvider>
+    <AppProviders>
       <RouterProvider router={router} />
-    </QueryProvider>
-  </React.StrictMode>
+      <Toaster richColors position="top-right" closeButton />
+    </AppProviders>
+  </React.StrictMode>,
 );

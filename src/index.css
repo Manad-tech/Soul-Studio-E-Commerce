@@ -15,14 +15,24 @@
   --radius: 20px;
 }
 
+.light {
+  --background: #FAF6F0;
+  --surface: #F5EFE6;
+  --heading: #1C1A17;
+  --body: #5C554E;
+  --border: rgba(28, 26, 23, 0.12);
+}
+
 html {
   scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body {
   font-family: "DM Sans", sans-serif;
   background: var(--background);
   color: var(--body);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1,
@@ -33,8 +43,141 @@ h5,
 h6 {
   font-family: "Playfair Display", serif;
   color: var(--heading);
+  transition: color 0.3s ease;
 }
 
 * {
   box-sizing: border-box;
+}
+
+/* Custom cursor disabled for normal cursor */
+
+/* Light mode overrides for explicit color classes */
+.light body,
+.light .bg-\[\#0D0D0D\],
+.light .bg-\[\#0d0d0d\],
+.light .bg-\[\#0B0B0B\],
+.light .bg-\[\#0b0b0b\],
+.light .bg-black {
+  background-color: var(--background) !important;
+}
+
+.light .bg-\[\#111111\],
+.light .bg-\[\#111111\]\/40,
+.light .bg-black\/40,
+.light .bg-black\/30,
+.light .bg-black\/20,
+.light [role="dialog"],
+.light [role="menu"] {
+  background-color: var(--surface) !important;
+}
+
+/* Light mode hover state overrides */
+.light .hover\:bg-white\/5:hover {
+  background-color: rgba(28, 26, 23, 0.05) !important;
+}
+.light .hover\:bg-white\/10:hover {
+  background-color: rgba(28, 26, 23, 0.08) !important;
+}
+.light .hover\:bg-white\/20:hover {
+  background-color: rgba(28, 26, 23, 0.15) !important;
+}
+.light .hover\:bg-white:hover {
+  background-color: var(--heading) !important;
+  color: var(--background) !important;
+}
+.light .hover\:text-white:hover {
+  color: var(--heading) !important;
+}
+.light .hover\:text-white\/80:hover {
+  color: var(--heading) !important;
+}
+.light .hover\:border-white\/10:hover,
+.light .hover\:border-white\/20:hover,
+.light .hover\:border-white:hover {
+  border-color: var(--border) !important;
+}
+
+/* Static overlays mapping (e.g. NavLinks hover pill) */
+.light .bg-white\/5 {
+  background-color: rgba(28, 26, 23, 0.06) !important; /* Visible soft grey pill */
+}
+.light .bg-white\/10 {
+  background-color: rgba(28, 26, 23, 0.1) !important;
+}
+.light .bg-white\/20 {
+  background-color: rgba(28, 26, 23, 0.18) !important;
+}
+
+/* Light mode gradients override */
+.light .bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--surface), var(--background)) !important;
+}
+
+.light .bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--surface), var(--background)) !important;
+}
+
+.light .bg-gradient-to-t {
+  background-image: linear-gradient(to top, var(--surface), var(--background)) !important;
+}
+
+.light h1,
+.light h2,
+.light h3,
+.light h4,
+.light h5,
+.light h6,
+.light .text-white {
+  color: var(--heading) !important;
+}
+
+/* Exact mapping for opacity text white classes */
+.light .text-white\/95,
+.light .text-white\/90,
+.light .text-white\/80,
+.light .text-white\/70,
+.light .text-white\/60,
+.light .text-white\/50,
+.light .text-white\/40,
+.light .text-white\/30,
+.light .text-white\/20,
+.light .text-white\/10,
+.light .text-\[\#bdb5ad\] {
+  color: var(--body) !important;
+}
+
+/* Exact mapping for opacity border white classes */
+.light .border-white\/5,
+.light .border-white\/10,
+.light .border-white\/20,
+.light .border-white\/30 {
+  border-color: var(--border) !important;
+}
+
+/* Form input details mapping */
+.light input,
+.light select,
+.light textarea {
+  color: var(--heading) !important;
+  background-color: var(--background) !important;
+  border: 1px solid var(--border) !important;
+}
+
+.light input::placeholder {
+  color: rgba(28, 26, 23, 0.4) !important;
+}
+
+/* Quick Add button background flip */
+.light .bg-white {
+  background-color: #1c1a17 !important;
+  color: #ffffff !important;
+}
+
+/* Search and dropdown translucent plates */
+.light .bg-black\/80,
+.light .bg-black\/90,
+.light .bg-black\/95,
+.light .bg-\[\#0D0D0D\]\/90 {
+  background-color: rgba(250, 246, 240, 0.95) !important;
 }
