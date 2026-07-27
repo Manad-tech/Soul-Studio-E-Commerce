@@ -73,7 +73,7 @@ export default function AboutPage() {
         
         <Container className="relative z-10 text-center space-y-6 max-w-4xl mx-auto">
           <p className="text-[#C58A5C] tracking-[0.3em] uppercase text-xs font-semibold flex items-center justify-center gap-1.5">
-            <Sparkles size={14} /> Soul Studio &bull; Udaipur
+            <Sparkles size={14} /> Soul Studio – Un Arte Ventura
           </p>
           <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl leading-tight text-white tracking-wide">
             "A Soulful Journey of Artistic exploration, Creativity and handmade expression"

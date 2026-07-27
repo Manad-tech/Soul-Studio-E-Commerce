@@ -25,12 +25,12 @@ export default function Navbar() {
       }`}
     >
       <Container className="h-full">
-        <div className="flex h-full items-center justify-between">
+        <div className="flex h-full items-center justify-between gap-4 lg:gap-6 xl:gap-8">
           <NavLogo />
           
           <NavLinks />
           
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6 shrink-0">
             <NavActions />
             <MobileNav />
           </div>
